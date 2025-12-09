@@ -1,10 +1,27 @@
+
+:root {
+    --color-accent: hsl(47, 88%, 63%); /* Color acento */
+    --color-muted: hsl(0, 0%, 42%);    /* Color gris para texto */
+}
+
+
 .card{
-    padding: 20px;
+    padding: 1.25rem;
     background-color: white;
     border-radius: 15px;
     border: 1px solid black;
-    box-shadow: 6px 6px 0px 0px #000;
-    width: 350px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.card_title{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .card_container{
@@ -32,18 +49,19 @@
     margin: 5px 0 0 0;
     cursor:  pointer;
     text-decoration:none;
-    color:hsl(47, 88%, 63%) ;
+    color: var(--color-accent) ;
     
 }
 .card_date{
-    color:  hsl(0, 0%, 42%);
+    color:  var(--color-muted);
     margin: 5px 0 0 0;
     font-size: 14px;
 }
 
 .card_text{
     margin: 15px 0;
-    color: hsl(0, 0%, 42%);}
+    color: var(--color-muted);
+}
 
 .card_label{
     border-radius: 5px;
