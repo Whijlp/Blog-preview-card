@@ -2,6 +2,7 @@
 :root {
     --color-accent: hsl(47, 88%, 63%); /* Color acento */
     --color-muted: hsl(0, 0%, 42%);    /* Color gris para texto */
+    --color-black: black;
 }
 
 
@@ -46,11 +47,15 @@
 .card_link{
     font-weight: 800;
     font-size: 25px;
-    margin: 5px 0 0 0;
+    margin: 15px 0 0 0;
     cursor:  pointer;
     text-decoration:none;
-    color: var(--color-accent) ;
-    
+    color: var(--color-black);   
+     
+}
+
+.card_link:hover{
+    color: var(--color-accent) ; 
 }
 .card_date{
     color:  var(--color-muted);
@@ -72,3 +77,9 @@
     font-size: 18px;
 
 }
+
+.card_footer{
+    font-size:15px;
+    display: flex;
+    font-weight: 700;
+   }
